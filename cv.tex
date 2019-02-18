@@ -1,0 +1,237 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% "ModernCV" CV and Cover Letter
+% LaTeX Template
+% Version 1.11 (19/6/14)
+%
+% This template has been downloaded from:
+% http://www.LaTeXTemplates.com
+%
+% Original author:
+% Xavier Danaux (xdanaux@gmail.com)
+%
+% License:
+% CC BY-NC-SA 3.0 (http://creativecommons.org/licenses/by-nc-sa/3.0/)
+%
+% Important note:
+% This template requires the moderncv.cls and .sty files to be in the same
+% directory as this .tex file. These files provide the resume style and themes
+% used for structuring the document.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+
+\documentclass[11pt,a4paper,sans]{moderncv} % Font sizes: 10, 11, or 12; paper sizes: a4paper, letterpaper, a5paper, legalpaper, executivepaper or landscape; font families: sans or roman
+
+\usepackage[utf8]{inputenc}
+
+\moderncvstyle{casual} % CV theme - options include: 'casual' (default), 'classic', 'oldstyle' and 'banking'
+\moderncvcolor{blue} % CV color - options include: 'blue' (default), 'orange', 'green', 'red', 'purple', 'grey' and 'black'
+
+\usepackage{lipsum} % Used for inserting dummy 'Lorem ipsum' text into the template
+\usepackage{microtype}
+
+
+\usepackage[scale=0.78]{geometry} % Reduce document margins
+%\setlength{\hintscolumnwidth}{3cm} % Uncomment to change the width of the dates column
+%\setlength{\makecvtitlenamewidth}{10cm} % For the 'classic' style, uncomment to adjust the width of the space allocated to your name
+
+%----------------------------------------------------------------------------------------
+%	NAME AND CONTACT INFORMATION SECTION
+%----------------------------------------------------------------------------------------
+
+\firstname{Karel} % Your first name
+\familyname{Kubíček} % Your last name
+
+% All information in this block is optional, comment out any lines you don't need
+\title{Curriculum Vitae}
+\address{Saatlenstrasse 32A}{Zurich, Switzerland}
+%\address{Pod kaštany 11}{Brno, Czech Republic}
+%\address{Novomoravanská 58}{Brno, Czech Republic}
+\mobile{(+41) 79 200 22 37}
+%\mobile{(+420) 608 930 609}
+\email{karel.kubicek@inf.eth.ch}
+%\email{karel.kubicek@mail.muni.cz}
+%\email{kubicek.k@gmail.com}
+%\homepage{staff.org.edu/~jsmith}{staff.org.edu/$\sim$jsmith} % The first argument is the url for the clickable link, the second argument is the url displayed in the template - this allows special characters to be displayed such as the tilde in this example
+%\extrainfo{additional information}
+\photo[70pt][0.4pt]{pictures/picture} % The first bracket is the picture height, the second is the thickness of the frame around the picture (0pt for no frame)
+%\quote{"A witty and playful quotation" - John Smith}
+
+%----------------------------------------------------------------------------------------
+
+\begin{document}
+
+\makecvtitle % Print the CV title
+
+%----------------------------------------------------------------------------------------
+%    EDUCATION SECTION
+%----------------------------------------------------------------------------------------
+
+\section{Education}
+
+\cventry{2018--Present}{Doctoral student}{Department of Computer Science, ETH Zurich}{Zurich}{}{Information Security Group}
+\cventry{2015--2017}{Master's student}{Faculty of Informatics, Masaryk University (FI MU)}{Brno}{}{Information Technology Security (English study program)}
+\cventry{2016}{Exchange student}{Faculty of Computer Science and Media Technology, Norwegian University of Science and Technology (NTNU)}{Trondheim}{}{Information Technology. Student of PhD course Cryptographic Protocols and Their Applications with resulting paper draft on analysis of communication anonymisation tools (Tor, I2P, cMix and Vuvuzela).}
+\cventry{2012--2015}{Bachelor Studies}{Faculty of Informatics, Masaryk University (FI MU)}{Brno}{}{Computer Systems and Data Processing}
+\cventry{2004--2012}{Grammar school}{Gymnázium Vídeňská 47}{Brno}{}{}
+
+\section{Publications}
+
+\cvitem{Research paper}{\vspace{0.22cm}\emph{\httplink[BoolTest: The Fast Randomness Testing Strategy Based on Boolean Functions with Application to DES, 3-DES, MD5, MD6 and SHA-256]{https://link.springer.com/chapter/10.1007/978-3-030-11039-0_7}}}
+\cvitem{Contributors}{Marek Sýs, Dušan Klinec, Karel Kubíček, Petr Švenda}
+\cvitem{Published in}{Communications in Computer and Information Science}
+
+\cvitem{Master's Thesis}{\vspace{0.22cm}\emph{\httplink[Optimisation heuristics in randomness testing]{crocs.fi.muni.cz/thesis/kubicek2017}}}
+\cvitem{Supervisor}{Assistant Professor \emaillink[Petr Švenda \emailsymbol]{xsvenda@fi.muni.cz}}
+\cvitem{Description}{
+This thesis explored the optimisation methods (heuristics, ANN) for increasing capabilities of automatic analysis of cryptoprimitives.
+Awarded the second place in the contest for the best thesis in the field of IT Security.
+}
+
+\cvitem{Research paper}{\vspace{0.22cm}\emph{\httplink[New results on reduced-round Tiny Encryption Algorithm using genetic programming]{crocs.fi.muni.cz/papers/infocomm2016}}}
+\cvitem{Contributors}{Karel Kubíček, Jiří Novotný, Petr Švenda, Martin Ukrop}
+\cvitem{Published in}{Infocommunications journal 2017}
+
+%\cvitem{Bachelor's Thesis}{\vspace{0.22cm}\emph{\httplink[An Introduction to algorithms in examples]{is.muni.cz/th/408351/fi_b/thesis.pdf}}}
+%\cvitem{Supervisors}{Professor \emaillink[Ivana Černá \emailsymbol]{cerna@fi.muni.cz} \& Assistant Professor \emaillink[Vojtěch Řehák \emailsymbol]{rehak@fi.muni.cz}}
+%\cvitem{Description}{
+%The goal of this thesis was creating study materials for the course Algorithms and data structures and their deployment to the learning process.
+%}
+
+%----------------------------------------------------------------------------------------
+%    AWARDS SECTION
+%----------------------------------------------------------------------------------------
+
+\section{Awards}
+
+\cvitem{2017}{Awarded the second place in the contest for the best thesis in the field of IT Security.}
+\cvitem{2013--2017}{Various scholarships for contribution in student projects (Czech Science Foundation, university foundation), merit scholarships.}
+
+
+%----------------------------------------------------------------------------------------
+%    WORK EXPERIENCE SECTION
+%----------------------------------------------------------------------------------------
+
+\section{Experience}
+
+\cventry{2018--Present}{Doctoral student at ETH Zurich}{\textsc{Information Security Group}}{Zurich}{}{
+\begin{itemize}
+    \item The research goal is automation of GDPR auditing
+    \item Teaching Information security tutorials
+\end{itemize}
+}
+
+\cventry{2014--2018}{Development of randomness testing framework EACirc for analysis of cryptographic primitives}{\textsc{Centre for Research on Cryptography and Security, FI MU}}{Brno}{}{
+\begin{itemize}
+    \item Implementation and comparison of optimisation methods into EACirc (framework for automatized randomness testing).
+    \item Analysis of Tiny Encryption Algorithm (TEA) using EACirc framework.
+\end{itemize}
+}
+
+\cventry{2017 Jan--Sep}{Network security researcher}{\textsc{NEXA Technologies CZ}}{Brno}{}{
+\begin{itemize}
+    \item Working on research and development project in the area of cryptography, security and machine learning.
+    \item Reference: \emaillink[Jaroslav Šeděnka \emailsymbol]{sedenka@mail.muni.cz}, \emaillink[Martin Stehlík \emailsymbol]{msk@nexatech.fr}
+\end{itemize}
+}
+
+%------------------------------------------------
+
+%\cventry{2014--2016}{Analysis of Tiny Encryption Algorithm (TEA) using EACirc framework}{\textsc{Centre for Research on Cryptography and Security, FI MU}}{Brno}{}{
+%Implementation of TEA for EACirc and comparing its results with results of other teams and randomness testing tools. Analysing ideal settings for EACirc.}
+
+%------------------------------------------------
+
+\cventry{2013--2017}{Seminar tutor of Algorithms and Automata's theory courses}{\textsc{FI MU}}{Brno}{}{
+\begin{itemize}
+    \item 2013--2017 Algorithms and data structures course
+    \item 2015--2016 Automata, Grammars, and Complexity course
+\end{itemize}
+}
+
+%------------------------------------------------
+
+\cventry{2013--2017}{Creating study materials for basic and advanced Algorithm courses}{\textsc{FI MU}}{Brno}{}{
+\begin{itemize}
+    \item Writing exercise book -- 160 pages book with exercises and their sample results.
+    \item Preparing and correcting assignments and final programming tasks.
+\end{itemize}
+}
+
+%------------------------------------------------
+
+\cventry{2013--2017}{Contribution on organizing informatics seminar, competitions and puzzle hunts for both secondary-school and university students}{\textsc{FI MU}}{Brno}{}{
+\begin{itemize}
+    \item 2015 -- Head of secondary-school competition InterSob (leading 30 members team for four months).
+    %\item Active member of Nordic Animals Association, which covers these activities.
+\end{itemize}
+}
+
+%----------------------------------------------------------------------------------------
+%    COMPUTER SKILLS SECTION
+%----------------------------------------------------------------------------------------
+
+\section{Featured Skills}
+
+\cvitem{Basic}{\textsc{Java}, \textsc{R}, Assembler}
+\cvitem{Intermediate}{\textsc{Haskell}, \LaTeX, Unix-like OS, automata's theory,  optimisation methods, classification methods, secure coding}
+\cvitem{Advanced}{\textsc{Python}, \textsc{C}, \textsc{C++}, algorithm design, symmetric and asymmetric cryptography}
+
+%----------------------------------------------------------------------------------------
+%    COMMUNICATION SKILLS SECTION
+%----------------------------------------------------------------------------------------
+
+%\section{Communication and Soft-skills}
+
+%\cvitem{2015--Present}{Teaching}
+%\cvitem{2015--Present}{Organizing or leading competitions for selective students}
+%\cvitem{2011--2015}{Work with children -- summer camps and training of young water live savers}
+
+%----------------------------------------------------------------------------------------
+%    LANGUAGES SECTION
+%----------------------------------------------------------------------------------------
+
+\section{Languages}
+
+\cvitemwithcomment{Czech}{Mothertongue}{}
+\cvitemwithcomment{English}{Full professional proficiency}{C1-B2}
+\cvitemwithcomment{German}{Elementary communication and comprehension}{A2}
+\cvitemwithcomment{Norwegian}{Basic words and phrases only}{A1}
+
+%----------------------------------------------------------------------------------------
+%    INTERESTS SECTION
+%----------------------------------------------------------------------------------------
+
+\section{Interests}
+
+\renewcommand{\listitemsymbol}{-~} % Changes the symbol used for lists
+
+\cvlistdoubleitem{Water sports}{Mountaineering}
+\cvlistdoubleitem{Work in education system}{Puzzlehunting}
+
+%%----------------------------------------------------------------------------------------
+%%    COVER LETTER
+%%----------------------------------------------------------------------------------------
+
+%% To remove the cover letter, comment out this entire block
+
+%\clearpage
+
+%\recipient{HR Department}{Corporation\\123 Pleasant Lane\\12345 City, State} % Letter recipient
+%\date{\today} % Letter date
+%\opening{Dear Sir or Madam,} % Opening greeting
+%\closing{Sincerely yours,} % Closing phrase
+%\enclosure[Attached]{curriculum vit\ae{}} % List of enclosed documents
+
+%\makelettertitle % Print letter title
+
+%\lipsum[1-3] % Dummy text
+
+%\makeletterclosing % Print letter signature
+
+%%----------------------------------------------------------------------------------------
+
+\end{document}
